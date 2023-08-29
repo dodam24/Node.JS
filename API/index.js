@@ -1,9 +1,9 @@
 const express = require('express')
-var cors = require('cors')  // CORS 설정
+var cors = require('cors')  // CORS 설정 (1)
 const app = express()
 const port = 3000
 
-app.use(cors())
+app.use(cors()) // CORS 설정 (2)
 
 app.get('/', (req, res) => {    // HTTP 메소드(라우팅, 콜백 함수)
   res.send('Hello World!')
